@@ -1,0 +1,4 @@
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (1, '2019-09-01 17:57:18.934', NULL, 'seed_user', NULL, NULL, 'Composer/Author', 'CA');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (2, '2019-09-01 17:57:18.934', NULL, 'seed_user', NULL, NULL, 'Composer, Writer', 'C');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (3, '2019-09-01 17:57:18.934', NULL, 'seed_user', NULL, NULL, 'Arranger', 'AR');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (4, '2019-09-01 17:57:18.934', NULL, 'seed_user', NULL, NULL, 'Adaptor', 'AD');

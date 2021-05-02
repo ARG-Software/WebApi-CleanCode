@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="RF.Domain.Entities.Core.SongCodeIdentifier.Base.SongCodeIdentifierBase" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAgIAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SongCodeIdentifier\Base\SongCodeIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.SongCodeIdentifier.ISRC">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAACAAAAAAAEAAAAIAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SongCodeIdentifier\ISRC.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Artist" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.SongCodeIdentifier.ISWC">
+    <Position X="4.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SongCodeIdentifier\ISWC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Artist">
+    <Position X="2.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAEAAAAAAAQgIAAAAAACAAAAAAAgAAE=</HashCode>
+      <FileName>Entities\Core\Artist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Company" Collapsed="true">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Currency" Collapsed="true">
+    <Position X="10.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Currency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.CWRFile" Collapsed="true">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAQAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entities\Core\CWRFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.DistributionAgreement" Collapsed="true">
+    <Position X="14" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABIAAAAAAAAAAAQAAAAAAAAAAAAABAIAAAA=</HashCode>
+      <FileName>Entities\Core\DistributionAgreement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.DistributionAgreementDetail" Collapsed="true">
+    <Position X="15.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACQIBAREgAAoAEACAAAAIlgAwAAAAAABAAAAABIQAA=</HashCode>
+      <FileName>Entities\Core\DistributionAgreementDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.DistributionAgreementFilter" Collapsed="true">
+    <Position X="17.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAABEgAAAAAACAAAAABgAgAAAAAABAAACAAAAAA=</HashCode>
+      <FileName>Entities\Core\DistributionAgreementFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.EAN" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAEAAAAAIAQAAAAgAAAAgAAAgAAAAAA=</HashCode>
+      <FileName>Entities\Core\EAN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Episode" Collapsed="true">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAEAAAAQAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Episode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.EpisodeAlias" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Entities\Core\EpisodeAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Label" Collapsed="true">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAGAAAAAAAAAAAAQgAAAAAAACAAAAAAAgAAE=</HashCode>
+      <FileName>Entities\Core\Label.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.LabelAlias" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\LabelAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.MechanicalLicense" Collapsed="true">
+    <Position X="15.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\MechanicalLicense.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Payee" Collapsed="true">
+    <Position X="17.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAIAACIAAAAIIAAEAAQAAAgAAAAIAAIABAAAAAU=</HashCode>
+      <FileName>Entities\Core\Payee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PaymentReceived" Collapsed="true">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAgEIAAKAAAAAAABgCAAAAAAAAAAEAEAAAAA=</HashCode>
+      <FileName>Entities\Core\PaymentReceived.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Platform" Collapsed="true">
+    <Position X="8.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAQAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Platform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PlatformTier" Collapsed="true">
+    <Position X="10.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\PlatformTier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PlatformTierAlias" Collapsed="true">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\PlatformTierAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PlatformType" Collapsed="true">
+    <Position X="14" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\PlatformType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.ProductionTitle" Collapsed="true">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAACA=</HashCode>
+      <FileName>Entities\Core\ProductionTitle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.ProductionTitleAlias" Collapsed="true">
+    <Position X="17.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\ProductionTitleAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.ProductionType" Collapsed="true">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\ProductionType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Publisher" Collapsed="true">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKACAAAAAWAABAEAgAAgQAQAAAAAEABAgAAAEAAAAAE=</HashCode>
+      <FileName>Entities\Core\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PublisherAlias" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\PublisherAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.PublisherType" Collapsed="true">
+    <Position X="12.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\PublisherType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Recipient" Collapsed="true">
+    <Position X="14" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Recipient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Region" Collapsed="true">
+    <Position X="15.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.RoyaltyDistribution" Collapsed="true">
+    <Position X="17.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAgQAAAAgAAAAAAAACCAAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entities\Core\RoyaltyDistribution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.RoyaltyType" Collapsed="true">
+    <Position X="7" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\RoyaltyType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.RoyaltyTypeAlias" Collapsed="true">
+    <Position X="8.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAARAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Entities\Core\RoyalytyTypeAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Society" Collapsed="true">
+    <Position X="10.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAgAAAAAAAAAVgAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entities\Core\Society.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.SocietyAlias" Collapsed="true">
+    <Position X="12.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SocietyAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Song" Collapsed="true">
+    <Position X="14" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAACAAIAAAAACAAQAAIAAAoAAABABAAABAAAAAA=</HashCode>
+      <FileName>Entities\Core\Song.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.SongAlias" Collapsed="true">
+    <Position X="15.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SongAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Source" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Source.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.SourceSongCode" Collapsed="true">
+    <Position X="7" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgABAAAAAAAgAAhAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\SourceSongCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.StatementDetail" Collapsed="true">
+    <Position X="8.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIBABUCABAAEBKAAAAAlggwAAAAACBACAkABIAAA=</HashCode>
+      <FileName>Entities\Core\StatementDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.StatementHeader" Collapsed="true">
+    <Position X="10.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAIEAAAAAAAAAAAAAAAAAAAABBABAAAQAAIAA=</HashCode>
+      <FileName>Entities\Core\StatementHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Template" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAgAACAAAAAAAAAQAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Template.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Territory" Collapsed="true">
+    <Position X="14" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Territory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.TerritoryAlias" Collapsed="true">
+    <Position X="15.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAUgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\TerritoryAlias.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.UPC" Collapsed="true">
+    <Position X="17.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAEAAAAAIAQAgAAgAAAAgAAAgAAAAAA=</HashCode>
+      <FileName>Entities\Core\UPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.Writer" Collapsed="true">
+    <Position X="7" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAIEAAAAAAAAQQAAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\Writer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.WriterRoleCode" Collapsed="true">
+    <Position X="8.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Core\WriterRoleCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RF.Domain.Entities.Core.WriterShare" Collapsed="true">
+    <Position X="10.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgAAAABAAAAAAAAAIgAAAAAAAABEAAAAAFAAAA=</HashCode>
+      <FileName>Entities\Core\WriterShare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npoi.Mapper" Version="3.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RF.Domain.Interfaces\RF.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\RF.Domain\RF.Domain.csproj" />
+    <ProjectReference Include="..\RF.Library.Utils\RF.Library.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

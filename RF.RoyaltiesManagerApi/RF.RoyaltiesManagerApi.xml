@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RF.RoyaltiesManagerApi</name>
+    </assembly>
+    <members>
+        <member name="T:RF.RoyaltiesManagerApi.Controllers.RoyaltiesManagerController">
+            <summary>
+             Statement Controller
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:RF.RoyaltiesManagerApi.Controllers.RoyaltiesManagerController._etlService">
+            <summary>
+            The statement service
+            </summary>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Controllers.RoyaltiesManagerController.#ctor(RF.Services.Interfaces.ETL.IETLService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RF.RoyaltiesManagerApi.Controllers.RoyaltiesManagerController"/> class.
+            </summary>
+            <param name="etlService">The elt service.</param>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Controllers.RoyaltiesManagerController.ProcessStatement(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Int32,System.String[])">
+            <summary>
+            Uploads the statement.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="templateId">The template id for processing the royalties</param>
+            <param name="paymentId">The payment id for processing the royalties</param>
+            <param name="tags">The tags to mark the job with</param>
+            <returns></returns>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="P:RF.RoyaltiesManagerApi.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="P:RF.RoyaltiesManagerApi.Startup.HostingEnvironment">
+            <summary>
+            Gets the hosting environment.
+            </summary>
+            <value>
+            The hosting environment.
+            </value>
+        </member>
+        <member name="P:RF.RoyaltiesManagerApi.Startup.WebServicesConfigurations">
+            <summary>
+            Gets or sets the web services configurations, in this case the api configurations.
+            </summary>
+            <value>
+            The web services configurations.
+            </value>
+        </member>
+        <member name="P:RF.RoyaltiesManagerApi.Startup.BackgroundJobConfigurations">
+            <summary>
+            Gets or sets the background job configurations.
+            </summary>
+            <value>
+            The background job configurations.
+            </value>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RF.RoyaltiesManagerApi.Startup"/> class.
+            </summary>
+            <param name="env">The env.</param>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            Configures the container.
+            </summary>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:RF.RoyaltiesManagerApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+        </member>
+    </members>
+</doc>

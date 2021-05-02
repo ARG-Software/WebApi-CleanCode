@@ -1,0 +1,22 @@
+{
+  "name": "rf.web-api.client",
+  "version": "0.0.0",
+  "description": "RF.WebApi.Client",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.10.59"
+  },
+  "dependencies": {
+    "nswag": "^12.3.1",
+    "rimraf": "^2.7.1"
+  },
+  "scripts": {
+    "clean:output": "npm run rimraf -- output",
+    "rimraf": "rimraf",
+    "client-generator": "node_modules/.bin/nswag run rfapi.nswag /runtime:NetCore22",
+    "generate-client-api": "npm run clean:output && npm run client-generator"
+  }
+}

@@ -1,0 +1,6 @@
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (1, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'Canada/USA');
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (2, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'Europe');
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (3, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'Asia-Pacific');
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (4, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'Latin America & The Caribbean');
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (5, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'Africa');
+INSERT INTO "Region"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (6, '2019-09-01 10:58:12.845', NULL, 'seed_user', NULL, NULL, 'World');

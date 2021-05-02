@@ -1,0 +1,1 @@
+INSERT INTO "Company"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (1, '2019-09-01 15:38:09.649', NULL, 'seed_user', NULL, NULL, 'Unchained Melody');

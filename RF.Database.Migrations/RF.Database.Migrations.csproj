@@ -1,0 +1,571 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SQLScripts\Development\0000-CleanState.sql.sql" />
+    <None Remove="SQLScripts\Development\0001-Region.sql" />
+    <None Remove="SQLScripts\Development\0002-Territory.sql" />
+    <None Remove="SQLScripts\Development\0003-TerritoryAlias.sql" />
+    <None Remove="SQLScripts\Development\0004-Society.sql" />
+    <None Remove="SQLScripts\Development\0005-SocietyAlias.sql" />
+    <None Remove="SQLScripts\Development\0006-Source.sql" />
+    <None Remove="SQLScripts\Development\0007-Template.sql" />
+    <None Remove="SQLScripts\Development\0008-Label.sql" />
+    <None Remove="SQLScripts\Development\0009-LabelAlias.sql" />
+    <None Remove="SQLScripts\Development\0010-Company.sql" />
+    <None Remove="SQLScripts\Development\0011-Currency.sql" />
+    <None Remove="SQLScripts\Development\0012-Song.sql" />
+    <None Remove="SQLScripts\Development\0013-SongAlias.sql" />
+    <None Remove="SQLScripts\Development\0014-ISRC.sql" />
+    <None Remove="SQLScripts\Development\0015-ISWC.sql" />
+    <None Remove="SQLScripts\Development\0016-RoyaltyType.sql" />
+    <None Remove="SQLScripts\Development\0017-RoyaltyTypeAlias.sql" />
+    <None Remove="SQLScripts\Development\0018-PublisherType.sql" />
+    <None Remove="SQLScripts\Development\0019-Publisher.sql" />
+    <None Remove="SQLScripts\Development\0020-PublisherAlias.sql" />
+    <None Remove="SQLScripts\Development\0021-Payee.sql" />
+    <None Remove="SQLScripts\Development\0022-Recipient.sql" />
+    <None Remove="SQLScripts\Development\0023-ProductionType.sql" />
+    <None Remove="SQLScripts\Development\0024-ProductionTitle.sql" />
+    <None Remove="SQLScripts\Development\0025-ProductionTitleAlias.sql" />
+    <None Remove="SQLScripts\Development\0026-Episode.sql" />
+    <None Remove="SQLScripts\Development\0027-EpisodeAlias.sql" />
+    <None Remove="SQLScripts\Development\0028-PlatformType.sql" />
+    <None Remove="SQLScripts\Development\0029-Platform.sql" />
+    <None Remove="SQLScripts\Development\0030-PlatformTier.sql" />
+    <None Remove="SQLScripts\Development\0031-PlatformTierAlias.sql" />
+    <None Remove="SQLScripts\Development\0032-DistributionAgreementFilter.sql" />
+    <None Remove="SQLScripts\Development\0033-DistributionAgreement.sql" />
+    <None Remove="SQLScripts\Development\0034-DistributionAgreementDetail.sql" />
+    <None Remove="SQLScripts\Development\0035-PaymentReceived.sql" />
+    <None Remove="SQLScripts\Development\0036-StatementHeader.sql" />
+    <None Remove="SQLScripts\Development\0037-StatementDetail.sql" />
+    <None Remove="SQLScripts\Development\0038-Writer.sql" />
+    <None Remove="SQLScripts\Development\0039-WriterRoleCode.sql" />
+    <None Remove="SQLScripts\Development\0040-WriterShare.sql" />
+    <None Remove="SQLScripts\Development\0041-RoyaltyDistribution.sql" />
+    <None Remove="SQLScripts\Development\0042-IndexRestore.sql" />
+    <None Remove="SQLScripts\Development\0043-RoyaltyTypeGroupTable.sql" />
+    <None Remove="SQLScripts\Development\0044-DistributionAgreementFilterRoyaltyTypeGroup.sql" />
+    <None Remove="SQLScripts\Development\0045-DistributionFilterNewProperties.sql" />
+    <None Remove="SQLScripts\Development\0046-updateDistributionAgreementDetailFields.sql" />
+    <None Remove="SQLScripts\Nmg\0000-CleanState.sql.sql" />
+    <None Remove="SQLScripts\Nmg\0002-Region.sql" />
+    <None Remove="SQLScripts\Nmg\0003-Territory.sql" />
+    <None Remove="SQLScripts\Nmg\0004-TerritoryAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0005-Society.sql" />
+    <None Remove="SQLScripts\Nmg\0006-Source.sql" />
+    <None Remove="SQLScripts\Nmg\0007-Template.sql" />
+    <None Remove="SQLScripts\Nmg\0008-Label.sql" />
+    <None Remove="SQLScripts\Nmg\0009-LabelAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0010-Company.sql" />
+    <None Remove="SQLScripts\Nmg\0011-Currency.sql" />
+    <None Remove="SQLScripts\Nmg\0012-Song.sql" />
+    <None Remove="SQLScripts\Nmg\0013-SongAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0014-ISRC.sql" />
+    <None Remove="SQLScripts\Nmg\0015-ISWC.sql" />
+    <None Remove="SQLScripts\Nmg\0016-RoyaltyType.sql" />
+    <None Remove="SQLScripts\Nmg\0017-RoyaltyTypeAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0018-PublisherType.sql" />
+    <None Remove="SQLScripts\Nmg\0019-Publisher.sql" />
+    <None Remove="SQLScripts\Nmg\0020-PublisherAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0021-Payee.sql" />
+    <None Remove="SQLScripts\Nmg\0022-Recipient.sql" />
+    <None Remove="SQLScripts\Nmg\0023-ProductionType.sql" />
+    <None Remove="SQLScripts\Nmg\0024-PlatformType.sql" />
+    <None Remove="SQLScripts\Nmg\0025-Platform.sql" />
+    <None Remove="SQLScripts\Nmg\0026-PlatformTier.sql" />
+    <None Remove="SQLScripts\Nmg\0027-PlatformTierAlias.sql" />
+    <None Remove="SQLScripts\Nmg\0028-DistributionAgreementFilter.sql" />
+    <None Remove="SQLScripts\Nmg\0029-DistributionAgreement.sql" />
+    <None Remove="SQLScripts\Nmg\0030-DistributionAgreementDetail.sql" />
+    <None Remove="SQLScripts\Nmg\0031-PaymentReceived.sql" />
+    <None Remove="SQLScripts\Nmg\0032-SourceSongCode.sql" />
+    <None Remove="SQLScripts\Nmg\0033-Writer.sql" />
+    <None Remove="SQLScripts\Nmg\0034-WriterRoleCode.sql" />
+    <None Remove="SQLScripts\Nmg\0035-WriterShare.sql" />
+    <None Remove="SQLScripts\Nmg\0036-IndexRestore.sql" />
+    <None Remove="SQLScripts\Nmg\0037-RoyaltyTypeGroupTable.sql" />
+    <None Remove="SQLScripts\Nmg\0038-DistributionAgreementFilterRoyaltyTypeGroup.sql" />
+    <None Remove="SQLScripts\Nmg\0039-DistributionFilterNewProperties.sql" />
+    <None Remove="SQLScripts\Nmg\0040-updateDistributionAgreementDetailFields.sql" />
+    <None Remove="SQLScripts\Um\0000-CleanState.sql.sql" />
+    <None Remove="SQLScripts\Um\0001-Region.sql" />
+    <None Remove="SQLScripts\Um\0002-Territory.sql" />
+    <None Remove="SQLScripts\Um\0003-TerritoryAlias.sql" />
+    <None Remove="SQLScripts\Um\0004-Society.sql" />
+    <None Remove="SQLScripts\Um\0005-SocietyAlias.sql" />
+    <None Remove="SQLScripts\Um\0006-Source.sql" />
+    <None Remove="SQLScripts\Um\0007-Template.sql" />
+    <None Remove="SQLScripts\Um\0008-Label.sql" />
+    <None Remove="SQLScripts\Um\0009-LabelAlias.sql" />
+    <None Remove="SQLScripts\Um\0010-Company.sql" />
+    <None Remove="SQLScripts\Um\0011-Currency.sql" />
+    <None Remove="SQLScripts\Um\0012-Song.sql" />
+    <None Remove="SQLScripts\Um\0013-SongAlias.sql" />
+    <None Remove="SQLScripts\Um\0014-ISRC.sql" />
+    <None Remove="SQLScripts\Um\0015-ISWC.sql" />
+    <None Remove="SQLScripts\Um\0016-RoyaltyType.sql" />
+    <None Remove="SQLScripts\Um\0017-RoyaltyTypeAlias.sql" />
+    <None Remove="SQLScripts\Um\0018-PublisherType.sql" />
+    <None Remove="SQLScripts\Um\0019-Publisher.sql" />
+    <None Remove="SQLScripts\Um\0020-PublisherAlias.sql" />
+    <None Remove="SQLScripts\Um\0021-Payee.sql" />
+    <None Remove="SQLScripts\Um\0022-Recipient.sql" />
+    <None Remove="SQLScripts\Um\0023-ProductionType.sql" />
+    <None Remove="SQLScripts\Um\0024-ProductionTitle.sql" />
+    <None Remove="SQLScripts\Um\0025-ProductionTitleAlias.sql" />
+    <None Remove="SQLScripts\Um\0026-Episode.sql" />
+    <None Remove="SQLScripts\Um\0027-EpisodeAlias.sql" />
+    <None Remove="SQLScripts\Um\0028-PlatformType.sql" />
+    <None Remove="SQLScripts\Um\0029-Platform.sql" />
+    <None Remove="SQLScripts\Um\0030-PlatformTier.sql" />
+    <None Remove="SQLScripts\Um\0031-PlatformTierAlias.sql" />
+    <None Remove="SQLScripts\Um\0032-DistributionAgreementFilter.sql" />
+    <None Remove="SQLScripts\Um\0033-DistributionAgreement.sql" />
+    <None Remove="SQLScripts\Um\0034-DistributionAgreementDetail.sql" />
+    <None Remove="SQLScripts\Um\0035-PaymentReceived.sql" />
+    <None Remove="SQLScripts\Um\0036-StatementHeader.sql" />
+    <None Remove="SQLScripts\Um\0037-StatementDetail.sql" />
+    <None Remove="SQLScripts\Um\0038-Writer.sql" />
+    <None Remove="SQLScripts\Um\0039-WriterRoleCode.sql" />
+    <None Remove="SQLScripts\Um\0040-WriterShare.sql" />
+    <None Remove="SQLScripts\Um\0041-RoyaltyDistribution.sql" />
+    <None Remove="SQLScripts\Um\0042-IndexRestore.sql" />
+    <None Remove="SQLScripts\Um\0043-RoyaltyTypeGroupTable.sql" />
+    <None Remove="SQLScripts\Um\0044-DistributionAgreementFilterRoyaltyTypeGroup.sql" />
+    <None Remove="SQLScripts\Um\0045-DistributionFilterNewProperties.sql" />
+    <None Remove="SQLScripts\Um\0046-updateDistributionAgreementDetailFields.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\Shared\sharedSettings.json" Link="sharedSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SQLScripts\Development\0000-CleanState.sql.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0001-Region.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0002-Territory.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0003-TerritoryAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0004-Society.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0005-SocietyAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0006-Source.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0007-Template.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0008-Label.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0009-LabelAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0010-Company.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0011-Currency.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0012-Song.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0013-SongAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0014-ISRC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0015-ISWC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0016-RoyaltyType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0017-RoyaltyTypeAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0018-PublisherType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0019-Publisher.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0020-PublisherAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0021-Payee.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0022-Recipient.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0023-ProductionType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0024-ProductionTitle.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0025-ProductionTitleAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0026-Episode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0027-EpisodeAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0028-PlatformType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0029-Platform.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0030-PlatformTier.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0031-PlatformTierAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0032-DistributionAgreementFilter.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0033-DistributionAgreement.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0034-DistributionAgreementDetail.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0035-PaymentReceived.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0036-StatementHeader.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0037-StatementDetail.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0038-Writer.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0039-WriterRoleCode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0040-WriterShare.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0041-RoyaltyDistribution.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0042-IndexRestore.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0043-RoyaltyTypeGroupTable.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0044-DistributionAgreementFilterRoyaltyTypeGroup.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Development\0045-DistributionFilterNewProperties.sql" />
+    <EmbeddedResource Include="SQLScripts\Development\0046-updateDistributionAgreementDetailFields.sql" />
+    <EmbeddedResource Include="SQLScripts\Nmg\0000-CleanState.sql.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0002-Region.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0003-Territory.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0004-TerritoryAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0005-Society.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0006-Source.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0007-Template.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0008-Label.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0009-LabelAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0010-Company.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0011-Currency.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0012-Song.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0013-SongAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0014-ISRC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0015-ISWC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0016-RoyaltyType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0017-RoyaltyTypeAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0018-PublisherType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0019-Publisher.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0020-PublisherAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0021-Payee.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0022-Recipient.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0023-ProductionType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0024-PlatformType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0025-Platform.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0026-PlatformTier.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0027-PlatformTierAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0028-DistributionAgreementFilter.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0029-DistributionAgreement.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0030-DistributionAgreementDetail.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0031-PaymentReceived.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0032-SourceSongCode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0033-Writer.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0034-WriterRoleCode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0035-WriterShare.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0036-IndexRestore.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0037-RoyaltyTypeGroupTable.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0038-DistributionAgreementFilterRoyaltyTypeGroup.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Nmg\0039-DistributionFilterNewProperties.sql" />
+    <EmbeddedResource Include="SQLScripts\Nmg\0040-updateDistributionAgreementDetailFields.sql" />
+    <EmbeddedResource Include="SQLScripts\Nmg\0041-Indexation.sql" />
+    <EmbeddedResource Include="SQLScripts\Um\0000-CleanState.sql.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0001-Region.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0002-Territory.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0003-TerritoryAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0004-Society.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0005-SocietyAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0006-Source.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0007-Template.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0008-Label.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0009-LabelAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0010-Company.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0011-Currency.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0012-Song.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0013-SongAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0014-ISRC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0015-ISWC.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0016-RoyaltyType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0017-RoyaltyTypeAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0018-PublisherType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0019-Publisher.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0020-PublisherAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0021-Payee.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0022-Recipient.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0023-ProductionType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0024-ProductionTitle.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0025-ProductionTitleAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0026-Episode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0027-EpisodeAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0028-PlatformType.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0029-Platform.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0030-PlatformTier.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0031-PlatformTierAlias.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0032-DistributionAgreementFilter.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0033-DistributionAgreement.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0034-DistributionAgreementDetail.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0035-PaymentReceived.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0036-StatementHeader.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0037-StatementDetail.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0038-Writer.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0039-WriterRoleCode.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0040-WriterShare.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0047-Indexation.sql" />
+    <EmbeddedResource Include="SQLScripts\Um\0041-RoyaltyDistribution.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0042-IndexRestore.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0043-RoyaltyTypeGroupTable.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0044-DistributionAgreementFilterRoyaltyTypeGroup.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLScripts\Um\0045-DistributionFilterNewProperties.sql" />
+    <EmbeddedResource Include="SQLScripts\Um\0046-updateDistributionAgreementDetailFields.sql" />
+    <None Remove="SQLScripts\Development\Indexation.sql" />
+    <EmbeddedResource Include="SQLScripts\Development\0047-Indexation.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-postgresql" Version="4.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RF.Infrastructure.Configurations\RF.Infrastructure.Configurations.csproj" />
+    <ProjectReference Include="..\RF.Infrastructure.Data\RF.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\Output\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Program.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+</Project>

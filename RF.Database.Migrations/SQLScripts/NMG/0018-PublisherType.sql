@@ -1,0 +1,3 @@
+INSERT INTO "PublisherType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (1, '2020-01-15 13:58:01', '2020-01-15 13:58:04', NULL, NULL, NULL, 'Original Publisher');
+INSERT INTO "PublisherType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (2, '2020-01-16 00:59:06', NULL, NULL, NULL, NULL, 'Sub Publisher');
+INSERT INTO "PublisherType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name") VALUES (3, '2020-01-16 00:59:16', NULL, NULL, NULL, NULL, 'Administrator');

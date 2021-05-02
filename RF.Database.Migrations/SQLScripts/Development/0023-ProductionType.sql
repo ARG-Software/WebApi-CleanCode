@@ -1,0 +1,12 @@
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (1, '2019-11-25 19:51:01', '2019-11-25 19:51:04', NULL, NULL, NULL, 'Musical');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (2, '2019-12-05 00:42:07', '2019-12-05 00:42:10', NULL, NULL, NULL, 'TV Show');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (3, '2019-12-05 15:04:50', '2019-12-05 15:04:53', NULL, NULL, NULL, 'Film');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (4, '2019-12-06 16:44:50', '2019-12-06 16:44:51', NULL, NULL, NULL, 'Album');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (5, '2019-12-18 20:58:36', NULL, NULL, NULL, NULL, 'Single');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (6, '2019-12-18 21:50:12', NULL, NULL, NULL, NULL, 'Lyric Licensee');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (7, '2019-12-20 16:20:16', NULL, NULL, NULL, NULL, 'Folio');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (8, '2019-12-30 22:49:36', NULL, NULL, NULL, NULL, 'Commercial');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (9, '2020-01-05 22:38:10', NULL, NULL, NULL, NULL, 'GameShow');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (10, '2020-01-05 23:43:51', NULL, NULL, NULL, NULL, 'Unknown');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (11, '2020-01-06 16:59:17', NULL, NULL, NULL, NULL, 'DVD');
+INSERT INTO "ProductionType"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Title") VALUES (12, '2020-01-08 13:37:49', NULL, NULL, NULL, NULL, 'Venue');

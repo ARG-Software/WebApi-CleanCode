@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RF.Application\RF.Application.Core.csproj" />
+    <ProjectReference Include="..\RF.Domain.Interfaces\RF.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\RF.Infrastructure.Bus\RF.Infrastructure.Bus.csproj" />
+    <ProjectReference Include="..\RF.Infrastructure.Data\RF.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\RF.Infrastructure.Logger\RF.Infrastructure.Logger.csproj" />
+    <ProjectReference Include="..\RF.Infrastructure.Parser\RF.Infrastructure.Parser.csproj" />
+    <ProjectReference Include="..\RF.Services.ETL\RF.Services.ETL.csproj" />
+  </ItemGroup>
+</Project>

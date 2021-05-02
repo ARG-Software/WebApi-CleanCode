@@ -1,0 +1,1 @@
+INSERT INTO "SourceSongCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Code", "SongId", "SourceId") VALUES (1, '2020-01-24 11:03:01', NULL, NULL, NULL, NULL, '11144926', 100365, 4);

@@ -1,0 +1,19 @@
+{
+  "Environments": {
+    "Local": {
+      "ConnectionString": "Host=localhost;Database=development;Port=5432;User Id=postgres;Password=ze;"
+    },
+    "Development": {
+      "ConnectionString": "Host=royaltyflushnonprod.c7gdorbnbmja.us-east-1.rds.amazonaws.com;Port=5432;Pooling=true;Database=development;User Id=appuser;Password=zGssGv6s0tvOxCWmu+H2cQ;"
+    },
+    "Staging": {
+      "ConnectionString": "Host=royaltyflushnonprod.c7gdorbnbmja.us-east-1.rds.amazonaws.com;Port=5432;Pooling=true;Database=staging;User Id=appuser;Password=zGssGv6s0tvOxCWmu+H2cQ;"
+    },
+    "Um": {
+      "ConnectionString": "Host=umprod.c7gdorbnbmja.us-east-1.rds.amazonaws.com;Port=5432;Pooling=true;Database=umprod;User Id=appuser;Password=6h2kMP5jrOwN4yXdHh0Xcg;"
+    },
+    "Nmg": {
+      "ConnectionString": "Host=nmgprod.c7gdorbnbmja.us-east-1.rds.amazonaws.com;Port=5432;Pooling=true;Database=nmgprod;User Id=appuser;Password=OMMd24OEsPHiyn6+k3biTw;"
+    }
+  }
+}

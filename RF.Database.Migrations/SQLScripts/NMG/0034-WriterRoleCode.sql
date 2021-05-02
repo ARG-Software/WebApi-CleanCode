@@ -1,0 +1,4 @@
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (1, '2020-01-16 18:22:52', NULL, NULL, NULL, NULL, 'Composer/Author', 'CA');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (2, '2020-01-16 18:23:07', NULL, NULL, NULL, NULL, 'Composer, Writer', 'C');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (3, '2020-01-16 18:23:25', NULL, NULL, NULL, NULL, 'Arranger', 'AR');
+INSERT INTO "WriterRoleCode"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Role", "Code") VALUES (4, '2020-01-16 18:23:42', NULL, NULL, NULL, NULL, 'Adaptor', 'AD');

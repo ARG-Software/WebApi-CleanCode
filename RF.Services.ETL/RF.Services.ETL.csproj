@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Tags" Version="1.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RF.Application\RF.Application.Core.csproj" />
+    <ProjectReference Include="..\RF.Domain.Interfaces\RF.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\RF.Domain\RF.Domain.csproj" />
+    <ProjectReference Include="..\RF.Services.Interfaces\RF.Services.Interfaces.csproj" />
+  </ItemGroup>
+</Project>

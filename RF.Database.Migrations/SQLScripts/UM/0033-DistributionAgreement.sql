@@ -1,0 +1,2 @@
+INSERT INTO "DistributionAgreement"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name", "DistributionAgreementFilterId", "CompanyId") VALUES (2, '2019-09-01 16:20:14.707', NULL, 'seed_user', NULL, NULL, 'HZUM Publishing', 2, 1);
+INSERT INTO "DistributionAgreement"("Id", "CreatedOn", "ModifiedOn", "CreatedByUserLogin", "ModifiedByUserLogin", "Description", "Name", "DistributionAgreementFilterId", "CompanyId") VALUES (1, '2019-11-25 18:52:28', NULL, NULL, NULL, NULL, 'North Melody Publishing', 2, 1);

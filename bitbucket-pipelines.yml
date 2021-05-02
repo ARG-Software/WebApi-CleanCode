@@ -1,0 +1,58 @@
+image: mcr.microsoft.com/dotnet/core/sdk:3.1
+
+common:
+ - buildsolution: &buildsol
+    name: "Build Solution"
+    caches: 
+        - dotnetcore 
+    script:
+        - dotnet restore $PROJECT_NAME
+        - dotnet build --no-restore $PROJECT_NAME
+        - dotnet publish $PROJECT_NAME --output dist/
+    artifacts:
+        - dist/**
+
+ - testsolution: &testsol
+    name: "Test Solution"
+    caches: 
+        - dotnetcore 
+    script:
+        - dotnet test --no-build --no-restore $TEST_NAME
+
+ - buildinformation: &buildinfo
+    name: Generate Build Information For Octopus Deployment
+    image: atlassian/default-image:2
+    script:
+      - apt-get install -y jq
+      - export VERSION=1.0.$BITBUCKET_BUILD_NUMBER
+      - /bin/sh create-build-info.sh $BITBUCKET_REPO_OWNER $REPO_USER $REPO_PASSWORD $BITBUCKET_REPO_SLUG $BITBUCKET_BUILD_NUMBER $BITBUCKET_COMMIT $BITBUCKET_BRANCH $BITBUCKET_GIT_HTTP_ORIGIN
+    artifacts:
+     - octopus.buildinfo
+
+ - octopusarchival: &octopus
+    name: Deploy to Octopus
+    image: octopusdeploy/octo:7.3.7-alpine
+    script:
+      - export VERSION=1.0.$BITBUCKET_BUILD_NUMBER
+      - octo pack --basePath=./dist --id $BITBUCKET_REPO_SLUG --version $VERSION --outFolder ./out --format zip
+      - octo push --package ./out/$BITBUCKET_REPO_SLUG.$VERSION.zip  --space $OCTOPUS_SPACE --server $OCTOPUS_SERVER --apiKey $OCTOPUS_APIKEY 
+      - octo build-information --package-id $BITBUCKET_REPO_SLUG --logLevel=verbose --version $VERSION --file=octopus.buildinfo --space $OCTOPUS_SPACE --server $OCTOPUS_SERVER --apiKey $OCTOPUS_APIKEY
+      - octo create-release --project $OCTOPUS_PROJECT --server $OCTOPUS_SERVER --space $OCTOPUS_SPACE --apiKey $OCTOPUS_APIKEY
+    artifacts:
+      - out/*.zip
+
+pipelines:
+  pull-requests:
+        'RF*':
+          - step: *buildsol
+          - step: *testsol
+  branches:
+    dev:
+       - step: *buildsol
+       - step: *testsol
+       - step: *buildinfo
+       - step: *octopus
+
+  default:
+    - step: *buildsol
+ 
